@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DARK PIXELS</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgc2hhcGUtcmVuZGVyaW5nPSJjcmlzcEVkZ2VzIj4KICA8IS0tIERhcmsgYmFja2dyb3VuZCAtLT4KICA8cmVjdCB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIGZpbGw9IiMwNzA1MGEiLz4KICA8IS0tIEJvbmZpcmUgYmFzZSAvIGxvZ3MgLS0+CiAgPHJlY3QgeD0iOCIgeT0iMjYiIHdpZHRoPSIxNiIgaGVpZ2h0PSIzIiBmaWxsPSIjNWEzMDEwIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjI0IiB3aWR0aD0iMTIiIGhlaWdodD0iMyIgZmlsbD0iIzdhNDAxOCIvPgogIDxyZWN0IHg9IjkiIHk9IjI1IiB3aWR0aD0iMiIgaGVpZ2h0PSI0IiBmaWxsPSIjNmEzODE0IiB0cmFuc2Zvcm09InJvdGF0ZSgtMTUsMTAsMjcpIi8+CiAgPHJlY3QgeD0iMjEiIHk9IjI1IiB3aWR0aD0iMiIgaGVpZ2h0PSI0IiBmaWxsPSIjNmEzODE0IiB0cmFuc2Zvcm09InJvdGF0ZSgxNSwyMiwyNykiLz4KICA8IS0tIEVtYmVycy9jb2FscyAtLT4KICA8cmVjdCB4PSIxMiIgeT0iMjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjIiIGZpbGw9IiNjYzQ0MDAiLz4KICA8cmVjdCB4PSIxNyIgeT0iMjMiIHdpZHRoPSIzIiBoZWlnaHQ9IjIiIGZpbGw9IiNkZDU1MDAiLz4KICA8cmVjdCB4PSIxNCIgeT0iMjQiIHdpZHRoPSI0IiBoZWlnaHQ9IjEiIGZpbGw9IiNmZjY2MDAiLz4KICA8IS0tIE1haW4gZmxhbWUgLSBvdXRlciAoYW1iZXIpIC0tPgogIDxyZWN0IHg9IjEzIiB5PSIxOCIgd2lkdGg9IjYiIGhlaWdodD0iNiIgZmlsbD0iI2Q0NjIyYSIvPgogIDxyZWN0IHg9IjEyIiB5PSIxNiIgd2lkdGg9IjgiIGhlaWdodD0iNCIgZmlsbD0iI2U4ODkyYSIvPgogIDxyZWN0IHg9IjExIiB5PSIxNCIgd2lkdGg9IjQiIGhlaWdodD0iNCIgZmlsbD0iI2M4YTg0YiIvPgogIDxyZWN0IHg9IjE3IiB5PSIxNCIgd2lkdGg9IjQiIGhlaWdodD0iNCIgZmlsbD0iI2Q0NjIyYSIvPgogIDxyZWN0IHg9IjEzIiB5PSIxMiIgd2lkdGg9IjYiIGhlaWdodD0iNCIgZmlsbD0iI2U4Yzk2YSIvPgogIDxyZWN0IHg9IjE0IiB5PSIxMCIgd2lkdGg9IjQiIGhlaWdodD0iNCIgZmlsbD0iI2ZmZGQ4OCIvPgogIDwhLS0gTWFpbiBmbGFtZSAtIGlubmVyIChicmlnaHQpIC0tPgogIDxyZWN0IHg9IjE0IiB5PSIxNiIgd2lkdGg9IjQiIGhlaWdodD0iNiIgZmlsbD0iI2ZmYWEyMiIvPgogIDxyZWN0IHg9IjE1IiB5PSIxMyIgd2lkdGg9IjMiIGhlaWdodD0iNSIgZmlsbD0iI2ZmY2M0NCIvPgogIDxyZWN0IHg9IjE1IiB5PSIxMSIgd2lkdGg9IjIiIGhlaWdodD0iNCIgZmlsbD0iI2ZmZWU4OCIvPgogIDxyZWN0IHg9IjE1IiB5PSI5IiAgd2lkdGg9IjIiIGhlaWdodD0iMyIgZmlsbD0iI2ZmZmZmZiIvPgogIDwhLS0gTGVmdCBmbGFtZSB0b25ndWUgLS0+CiAgPHJlY3QgeD0iMTAiIHk9IjE3IiB3aWR0aD0iMyIgaGVpZ2h0PSIzIiBmaWxsPSIjZDQ2MjJhIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjE1IiB3aWR0aD0iMiIgaGVpZ2h0PSIzIiBmaWxsPSIjZTg4OTJhIi8+CiAgPHJlY3QgeD0iOSIgIHk9IjE0IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBmaWxsPSIjYzhhODRiIi8+CiAgPCEtLSBSaWdodCBmbGFtZSB0b25ndWUgLS0+CiAgPHJlY3QgeD0iMTkiIHk9IjE3IiB3aWR0aD0iMyIgaGVpZ2h0PSIzIiBmaWxsPSIjZDQ2MjJhIi8+CiAgPHJlY3QgeD0iMjAiIHk9IjE1IiB3aWR0aD0iMiIgaGVpZ2h0PSIzIiBmaWxsPSIjZTg4OTJhIi8+CiAgPHJlY3QgeD0iMjEiIHk9IjE0IiB3aWR0aD0iMiIgaGVpZ2h0PSIyIiBmaWxsPSIjY2M4ODIwIi8+CiAgPCEtLSBHbG93IGhhbG8gKHNlbWktdHJhbnNwYXJlbnQpIC0tPgogIDxyZWN0IHg9IjYiICB5PSIxMiIgd2lkdGg9IjQiIGhlaWdodD0iMTAiIGZpbGw9IiNmZjY2MDAiIG9wYWNpdHk9IjAuMTIiLz4KICA8cmVjdCB4PSIyMiIgeT0iMTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjEwIiBmaWxsPSIjZmY2NjAwIiBvcGFjaXR5PSIwLjEyIi8+CiAgPHJlY3QgeD0iMTAiIHk9IjYiICB3aWR0aD0iMTIiIGhlaWdodD0iNiIgZmlsbD0iI2ZmYWEwMCIgb3BhY2l0eT0iMC4xMCIvPgogIDwhLS0gU3BhcmsgcGFydGljbGVzIC0tPgogIDxyZWN0IHg9IjgiICB5PSIxMiIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iI2ZmY2M0NCIgb3BhY2l0eT0iMC44NSIvPgogIDxyZWN0IHg9IjIyIiB5PSIxMCIgd2lkdGg9IjIiIGhlaWdodD0iMiIgZmlsbD0iI2ZmYWEyMiIgb3BhY2l0eT0iMC44MCIvPgogIDxyZWN0IHg9IjE5IiB5PSI4IiAgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI2ZmZmZmZiIgb3BhY2l0eT0iMC45MCIvPgogIDxyZWN0IHg9IjEyIiB5PSI3IiAgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI2ZmZWU4OCIgb3BhY2l0eT0iMC43NSIvPgogIDxyZWN0IHg9IjciICB5PSIxNiIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI2ZmODgwMCIgb3BhY2l0eT0iMC43MCIvPgogIDxyZWN0IHg9IjI0IiB5PSIxOCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0iI2ZmY2MwMCIgb3BhY2l0eT0iMC42NSIvPgo8L3N2Zz4=">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- BOSS PREVIEW TOOLTIP -->
+<div id="boss-preview-tip">
+  <div id="bpt-name"></div>
+  <div id="bpt-bars">
+    <div class="bpt-row"><span class="bpt-lbl">HP</span><div class="bpt-track"><div class="bpt-fill" id="bpt-hp" style="background:var(--red2)"></div></div></div>
+    <div class="bpt-row"><span class="bpt-lbl">ATK</span><div class="bpt-track"><div class="bpt-fill" id="bpt-atk" style="background:var(--ember)"></div></div></div>
+    <div class="bpt-row"><span class="bpt-lbl">SOULS</span><div class="bpt-track"><div class="bpt-fill" id="bpt-souls" style="background:var(--soul)"></div></div></div>
+  </div>
+</div>
+
+<!-- CORNER TRIGGERS FOR ADMIN PANEL -->
+<div id="corner-tl" class="corner-trigger"></div>
+<div id="corner-tr" class="corner-trigger"></div>
+<div id="corner-bl" class="corner-trigger"></div>
+<div id="corner-br" class="corner-trigger"></div>
+
+<!-- ADMIN PANEL OVERLAY -->
+<div id="admin-panel">
+  <div id="admin-content">
+    <div id="admin-title">⚡ ADMIN CONSOLE ⚡</div>
+    
+    <div class="admin-section">
+      <div class="admin-label">BOSS CONTROL</div>
+      <button class="admin-btn" onclick="adminUnlockAllBosses()">🔓 UNLOCK ALL BOSSES</button>
+      <button class="admin-btn" onclick="adminResetBosses()">↻ RESET ALL BOSSES</button>
+    </div>
+    
+    <div class="admin-section">
+      <div class="admin-label">RESOURCES</div>
+      <button class="admin-btn" onclick="adminAddSouls(10000)">💀 +10,000 SOULS</button>
+      <button class="admin-btn" onclick="adminAddSouls(100000)">💀 +100,000 SOULS</button>
+      <button class="admin-btn" onclick="adminMaxUpgrades()">⚡ MAX ALL UPGRADES</button>
+      <button class="admin-btn" onclick="adminGrantRebirth()" style="border-color:#cc44ff;color:#cc44ff;">✨ +1 REBIRTH (SHOW SCREEN)</button>
+    </div>
+    
+    <div class="admin-section">
+      <div class="admin-label">AUTO-PLAY</div>
+      <label class="admin-checkbox">
+        <input type="checkbox" id="admin-autoplay" onchange="toggleAutoPlay(this.checked)">
+        <span>Enable AI Auto-Play Mode</span>
+      </label>
+      <label class="admin-checkbox">
+        <input type="checkbox" id="admin-godmode" onchange="toggleGodMode(this.checked)">
+        <span>God Mode (Invincible)</span>
+      </label>
+    </div>
+    
+    <button class="admin-btn" onclick="closeAdminPanel()" style="margin-top:8px;">✕ CLOSE</button>
+  </div>
+</div>
+
+<!-- TITLE SCREEN -->
+<div id="screen-title" class="screen active">
+  <div class="bonfire-art">🔥</div>
+  <div class="title-rule"></div>
+  <div class="t1">DARK PIXELS</div>
+  <div class="t2">8-BIT SOULS</div>
+  <div class="t3">v8.0 — TWIN FLAME EDITION</div>
+  <div class="title-rule"></div>
+  <button class="btn" onclick="showScreen('screen-mode')" style="margin-top:16px;min-width:180px;">► BEGIN JOURNEY</button>
+  <button class="btn soul" onclick="showLeaderboard()" style="min-width:180px;">🏆 LEADERBOARD</button>
+  <button class="btn" onclick="showKeybinds()" style="min-width:180px;">⌨ KEY BINDINGS</button>
+  <button class="btn" id="manual-save-btn" onclick="manualSave()" style="min-width:180px;display:none;border-color:var(--green2);color:var(--green2);">🔥 SAVE GAME</button>
+  <button class="btn danger" id="delete-save-btn" onclick="deleteSave()" style="min-width:180px;display:none;">🗑 DELETE SAVE</button>
+  <div id="save-indicator" style="font-size:clamp(4px,.65vw,6px);color:#3a5a2a;letter-spacing:2px;margin-top:4px;"></div>
+  <div class="press-start" style="margin-top:12px;">PRESS TO START</div>
+</div>
+
+<!-- MODE SELECT -->
+<div id="screen-mode" class="screen">
+  <div id="mode-title">SELECT MODE</div>
+  <div id="mode-sub">CHOOSE YOUR PATH, UNKINDLED</div>
+  <div class="mode-cards">
+    <div class="mode-card p1c" onclick="setMode('1p')">
+      <div class="mode-icon" style="color:var(--p1);">🗡️</div>
+      <div class="mode-name" style="color:var(--p1);">1 PLAYER</div>
+      <div class="mode-desc">Solo journey<br>Full upgrades &amp; shrine</div>
+    </div>
+    <div class="mode-card p2c" onclick="setMode('2p')">
+      <div class="mode-icon" style="color:var(--p2);">⚔️</div>
+      <div class="mode-name" style="color:var(--p2);">2 PLAYER</div>
+      <div class="mode-desc">Co-op on one keyboard<br>P1: WASD · P2: ARROWS</div>
+      <div class="mode-warning">⚠ BOSSES +50% HP</div>
+    </div>
+    <div class="mode-card" style="border-color:#6600aa;" onclick="startBossRush()">
+      <div class="mode-icon" style="color:var(--magic);">💀</div>
+      <div class="mode-name" style="color:var(--magic);">BOSS RUSH</div>
+      <div class="mode-desc">All bosses back-to-back<br>No upgrade resets</div>
+      <div class="mode-warning" style="color:var(--magic);">⚡ GAUNTLET MODE</div>
+    </div>
+    <div class="mode-card" style="border-color:#cc4400;" onclick="startSurvivalMode()">
+      <div class="mode-icon" style="color:#ff6622;">♾️</div>
+      <div class="mode-name" style="color:#ff6622;">SURVIVAL</div>
+      <div class="mode-desc">Endless waves, escalating<br>How long can you last?</div>
+      <div class="mode-warning" style="color:#ff6622;">🔥 ENDLESS MODE</div>
+    </div>
+    <div class="mode-card" style="border-color:#22aacc;" onclick="startSpeedRun()">
+      <div class="mode-icon" style="color:#44ddff;">⏱️</div>
+      <div class="mode-name" style="color:#44ddff;">SPEED RUN</div>
+      <div class="mode-desc">Beat all bosses fastest<br>No shrine, no upgrades</div>
+      <div class="mode-warning" style="color:#44ddff;">⚡ TIMER ACTIVE</div>
+    </div>
+    <div class="mode-card" style="border-color:#aabb00;" onclick="startRandomBoss()">
+      <div class="mode-icon" style="color:#ccdd22;">🎲</div>
+      <div class="mode-name" style="color:#ccdd22;">RANDOM BOSS</div>
+      <div class="mode-desc">Fight a random lord<br>Surprise every time</div>
+      <div class="mode-warning" style="color:#ccdd22;">🎲 LUCK OF THE DRAW</div>
+    </div>
+  </div>
+  <button class="btn" onclick="showScreen('screen-title')" style="margin-top:8px;">← BACK</button>
+</div>
+
+<!-- Global overlays -->
+<div id="ach-toast"><span id="ach-icon">🏆</span><div id="ach-title">ACHIEVEMENT UNLOCKED</div><div id="ach-name"></div></div>
+<div id="ngplus-badge">NG+<span id="ngplus-num">1</span></div>
+<div id="name-modal">
+  <div id="name-modal-box">
+    <div id="name-modal-title">ENTER YOUR NAME</div>
+    <input id="name-input" type="text" maxlength="12" placeholder="UNKINDLED" autocomplete="off" spellcheck="false">
+    <button class="btn" onclick="submitLeaderboardName()" style="min-width:140px;">⚔ SUBMIT</button>
+  </div>
+</div>
+
+<!-- BOSS SELECT -->
+<div id="screen-select" class="screen">
+  <div id="select-header">
+    <div id="select-title">CHOOSE YOUR FATE</div>
+    <div id="select-sub">SELECT A BOSS TO CHALLENGE</div>
+    <div id="mode-badge" class="badge-1p">1P MODE</div>
+    <div id="select-souls-wrap">☠ <span id="select-souls">0</span> SOULS</div>
+  </div>
+  <div id="boss-list"></div>
+  <div id="select-actions">
+    <button class="btn" onclick="showScreen('screen-mode')">← BACK</button>
+    <button class="btn soul" onclick="showScreen('screen-shop')">🔥 SHRINE</button>
+    <button class="btn magic" onclick="showLeaderboard()">🏆 BOARD</button>
+    <button class="btn" onclick="showAchievements()">🎖 TROPHIES</button>
+    <button class="btn" onclick="showKeybinds()">⌨ BINDS</button>
+    <button class="btn" onclick="manualSave()" style="border-color:var(--green2);color:var(--green2);">💾 SAVE</button>
+  </div>
+</div>
+
+<!-- INTRO -->
+<div id="screen-intro" class="screen">
+  <div id="intro-fog"></div>
+  <div id="boss-name-display"></div>
+  <div id="boss-subtitle"></div>
+  <div id="boss-lore"></div>
+  <button class="btn" onclick="startBossFight()" style="margin-top:20px;animation:fadeIn 1.5s ease 1.5s both;min-width:200px;">ENTER FOG GATE</button>
+</div>
+
+<!-- GAME -->
+<div id="screen-game" class="screen">
+  <!-- Pause button -->
+  <button id="pause-btn" style="position:absolute;top:10px;right:10px;font-family:'Press Start 2P';font-size:clamp(5px,.8vw,8px);background:rgba(0,0,0,0.7);color:var(--gold);border:2px solid var(--gold);padding:6px 12px;cursor:pointer;z-index:100;letter-spacing:1px;" onclick="pauseGame()">⏸ MENU</button>
+  
+  <div id="boss-bar-wrap">
+    <div id="boss-name-hud"></div>
+    <div id="boss-hp-track">
+      <div id="boss-hp-fill"></div>
+      <div id="boss-hp-ticks"></div>
+      <div id="boss-hp-sep"></div>
+      <div id="boss-hp-pct">100%</div>
+    </div>
+  </div>
+  
+  <div id="arena">
+    <canvas id="game-canvas"></canvas>
+    <div id="fog-gate"></div>
+    <div id="phase-flash"></div>
+    <div id="attack-flash"></div>
+    <div id="magic-flash"></div>
+    <div id="parry-flash"></div>
+    <div id="rush-hud"></div>
+  </div>
+  
+  <div id="hud-wrap">
+    <!-- P1 HUD -->
+    <div class="player-hud p1-hud" id="p1-hud">
+      <div class="hud-player-tag p1-tag">P1 — UNKINDLED</div>
+      <div class="hud-row">
+        <div class="bar-block"><div class="bar-lbl">HP</div><div id="hp-out" class="bar-out"><div id="hp-in" class="hp-bar" style="width:100%"></div></div></div>
+        <div class="bar-block"><div class="bar-lbl">STAMINA</div><div id="stam-out" class="bar-out"><div id="stam-in" class="stam-bar" style="width:100%"></div></div></div>
+        <div class="bar-block"><div class="bar-lbl">MP</div><div id="mp-out" class="bar-out"><div id="mp-in" class="mp-bar" style="width:100%"></div></div></div>
+        <div class="bar-block"><div class="bar-lbl">GUARD</div><div id="guard-out" class="bar-out"><div id="guard-in" class="guard-bar" style="width:100%"></div></div></div>
+      </div>
+      <div class="hud-row">
+        <div class="flask-row">⚱<div class="estus-pips-c" id="estus-pips"></div></div>
+        <div class="weapon-display"><div class="weap-icon" id="p1-weap-icon">⚔</div><div class="weap-name-txt" id="p1-weap-name">SWORD</div></div>
+        <div class="armor-display"><div class="armor-icon" id="p1-armor-icon">🛡</div><div class="armor-name-txt" id="p1-armor-name">HOLLOW</div></div>
+        <div class="souls-ui">💀 <span id="game-souls">0</span></div>
+      </div>
+    </div>
+    <!-- P2 HUD (hidden in 1P mode) -->
+    <div class="player-hud p2-hud" id="p2-hud" style="display:none;">
+      <div class="hud-player-tag p2-tag">P2 — HOLLOW</div>
+      <div class="hud-row">
+        <div class="bar-block"><div class="bar-lbl">HP</div><div id="hp2-out" class="bar-out"><div id="hp2-in" class="hp-bar" style="width:100%"></div></div></div>
+        <div class="bar-block"><div class="bar-lbl">STAMINA</div><div id="stam2-out" class="bar-out"><div id="stam2-in" class="stam-bar" style="width:100%"></div></div></div>
+        <div class="bar-block"><div class="bar-lbl">MP</div><div id="mp2-out" class="bar-out"><div id="mp2-in" class="mp-bar" style="width:100%"></div></div></div>
+        <div class="bar-block"><div class="bar-lbl">GUARD</div><div id="guard2-out" class="bar-out"><div id="guard2-in" class="guard-bar" style="width:100%"></div></div></div>
+      </div>
+      <div class="hud-row">
+        <div class="flask-row">⚱<div class="estus-pips-c" id="estus2-pips"></div></div>
+        <div class="weapon-display"><div class="weap-icon" id="p2-weap-icon">⚔</div><div class="weap-name-txt" id="p2-weap-name">SWORD</div></div>
+        <div class="armor-display"><div class="armor-icon" id="p2-armor-icon">🛡</div><div class="armor-name-txt" id="p2-armor-name">HOLLOW</div></div>
+      </div>
+      <div id="p2-dead-banner" class="dead-banner" style="display:none;">☠ FALLEN</div>
+    </div>
+  </div>
+
+  <!-- Tutorial subtitle -->
+  <div id="tutorial-subtitle">
+    <div id="tutorial-text"></div>
+    <div id="tutorial-hint"></div>
+  </div>
+
+  <!-- Message area -->
+  <div id="message-area">
+    <div id="big-message"></div>
+    <div id="sub-message"></div>
+  </div>
+
+  <!-- In-game notification -->
+  <div id="game-notification" style="position:absolute;top:56px;left:50%;transform:translateX(-50%);text-align:center;pointer-events:none;z-index:300;background:rgba(0,0,0,0.85);border:1px solid var(--ember);padding:5px 14px;max-width:min(520px,88vw);opacity:0;transition:opacity 0.3s;">
+    <div id="notif-text" style="font-size:clamp(5px,.85vw,7px);color:var(--amber);letter-spacing:2px;line-height:1.8;"></div>
+  </div>
+
+  <!-- Pause overlay -->
+  <div id="pause-overlay">
+    <div style="font-size:clamp(10px,2.5vw,22px);color:var(--amber);letter-spacing:6px;text-shadow:0 0 20px var(--ember);">⏸ PAUSED</div>
+    <button class="btn" onclick="resumeGame()" style="min-width:180px;">▶ CONTINUE</button>
+    <button class="btn" onclick="showScreen('screen-keybinds');document.getElementById('pause-overlay').style.display='none';" style="min-width:180px;">⌨ KEY BINDINGS</button>
+    <div style="display:flex;align-items:center;gap:10px;margin-top:4px;">
+      <span style="font-size:clamp(4px,.65vw,6px);color:#555;letter-spacing:2px;">🔊 SFX VOLUME</span>
+      <input type="range" id="sfx-volume-slider" min="0" max="100" value="80" style="width:120px;cursor:pointer;" oninput="updateSfxVolume(this.value)">
+      <span id="sfx-vol-label" style="font-size:clamp(4px,.65vw,6px);color:var(--gold);letter-spacing:1px;min-width:28px;">80%</span>
+    </div>
+        <div style="display:flex;align-items:center;gap:10px;margin-top:2px;">
+      <span style="font-size:clamp(4px,.65vw,6px);color:#555;letter-spacing:2px;">🎵 MUSIC VOL</span>
+      <input type="range" id="music-volume-slider" min="0" max="100" value="55" style="width:120px;cursor:pointer;" oninput="bossMusic.setVolume(this.value/100);document.getElementById('music-vol-label').textContent=this.value+'%'">
+      <span id="music-vol-label" style="font-size:clamp(4px,.65vw,6px);color:var(--gold);letter-spacing:1px;min-width:28px;">55%</span>
+    </div>
+    <button class="btn" onclick="pauseGoToSelect()" style="min-width:180px;">🔥 BONFIRE (QUIT)</button>
+  </div>
+
+  <!-- Controls hints -->
+  <div id="controls-bar">
+    <div class="ctrl-group">
+      <div class="ctrl-label" style="color:var(--p1)">P1</div>
+      <span class="key-hint"><kbd id="kb-move">A/D</kbd>MOVE</span>
+      <span class="key-hint"><kbd id="kb-jump">W</kbd>JUMP</span>
+      <span class="key-hint"><kbd id="kb-roll">SPC</kbd>ROLL</span>
+      <span class="key-hint"><kbd id="kb-attack">J</kbd>ATK</span>
+      <span class="key-hint"><kbd id="kb-magic">K</kbd>MAGIC</span>
+      <span class="key-hint"><kbd id="kb-heal">E</kbd>HEAL</span>
+      <span class="key-hint"><kbd id="kb-block">F</kbd>BLOCK</span>
+    </div>
+    <div class="ctrl-group" id="p2-controls" style="display:none;">
+      <div class="ctrl-label" style="color:var(--p2)">P2</div>
+      <span class="key-hint p2k"><kbd id="kb2-move">←/→</kbd>MOVE</span>
+      <span class="key-hint p2k"><kbd id="kb2-jump">↑</kbd>JUMP</span>
+      <span class="key-hint p2k"><kbd id="kb2-roll">,</kbd>ROLL</span>
+      <span class="key-hint p2k"><kbd id="kb2-attack">L</kbd>ATK</span>
+      <span class="key-hint p2k"><kbd id="kb2-magic">;</kbd>MAGIC</span>
+      <span class="key-hint p2k"><kbd id="kb2-heal">'</kbd>HEAL</span>
+      <span class="key-hint p2k"><kbd id="kb2-block">/</kbd>BLOCK</span>
+    </div>
+    <div class="ctrl-group">
+      <span class="key-hint"><kbd>ESC</kbd>MENU</span>
+    </div>
+  </div>
+</div>
+
+<!-- KEYBINDS -->
+<div id="screen-keybinds" class="screen">
+  <div id="kb-title">⌨ KEY BINDINGS</div>
+  <div id="kb-subtitle">CLICK A BUTTON THEN PRESS ANY KEY</div>
+  <div class="kb-players">
+    <div class="kb-panel">
+      <div class="kb-panel-title" style="color:var(--p1);">— PLAYER 1 —</div>
+      <div class="kb-row"><span class="kb-action">MOVE LEFT</span> <button class="kb-btn" id="kb1-left"    onclick="startRebind('p1','left',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">MOVE RIGHT</span><button class="kb-btn" id="kb1-right"   onclick="startRebind('p1','right',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">JUMP</span>      <button class="kb-btn" id="kb1-jump"    onclick="startRebind('p1','jump',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">ROLL</span>      <button class="kb-btn" id="kb1-roll"    onclick="startRebind('p1','roll',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">ATTACK</span>    <button class="kb-btn" id="kb1-attack"  onclick="startRebind('p1','attack',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">MAGIC</span>     <button class="kb-btn" id="kb1-magic"   onclick="startRebind('p1','magic',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">HEAL</span>      <button class="kb-btn" id="kb1-heal"    onclick="startRebind('p1','heal',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">BLOCK</span>     <button class="kb-btn" id="kb1-block"   onclick="startRebind('p1','block',this)"></button></div>
+    </div>
+    <div class="kb-panel">
+      <div class="kb-panel-title" style="color:var(--p2);">— PLAYER 2 —</div>
+      <div class="kb-row"><span class="kb-action">MOVE LEFT</span> <button class="kb-btn" id="kb2-left"    onclick="startRebind('p2','left',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">MOVE RIGHT</span><button class="kb-btn" id="kb2-right"   onclick="startRebind('p2','right',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">JUMP</span>      <button class="kb-btn" id="kb2-jump"    onclick="startRebind('p2','jump',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">ROLL</span>      <button class="kb-btn" id="kb2-roll"    onclick="startRebind('p2','roll',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">ATTACK</span>    <button class="kb-btn" id="kb2-attack"  onclick="startRebind('p2','attack',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">MAGIC</span>     <button class="kb-btn" id="kb2-magic"   onclick="startRebind('p2','magic',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">HEAL</span>      <button class="kb-btn" id="kb2-heal"    onclick="startRebind('p2','heal',this)"></button></div>
+      <div class="kb-row"><span class="kb-action">BLOCK</span>     <button class="kb-btn" id="kb2-block"   onclick="startRebind('p2','block',this)"></button></div>
+    </div>
+  </div>
+  <div class="kb-actions">
+    <button class="btn danger" onclick="resetKeybinds()">↺ RESET DEFAULTS</button>
+    <button class="btn" onclick="showScreen(_kbFromScreen)">← BACK</button>
+  </div>
+</div>
+
+<!-- ACHIEVEMENTS -->
+<div id="screen-achievements" class="screen">
+  <div id="ach-screen-title">🏆 ACHIEVEMENTS 🏆</div>
+  <div id="ach-grid"></div>
+  <button class="btn" onclick="showScreen('screen-select')" style="margin-top:10px;">← BACK</button>
+</div>
+
+<!-- LEADERBOARD -->
+<div id="screen-leaderboard" class="screen">
+  <div id="lb-header">
+    <div id="lb-title">🏆 HALL OF CINDERS 🏆</div>
+    <div id="lb-sub">THE UNKINDLED WHO STOOD THEIR GROUND</div>
+    <div id="global-souls-wrap" style="font-size:clamp(5px,.9vw,8px);color:var(--soul);letter-spacing:3px;margin-top:4px;text-align:center;">
+      💀 GLOBAL SOULS HARVESTED: <span id="global-souls-count">—</span>
+    </div>
+  </div>
+  <div id="lb-filter-row">
+    <button class="lb-filter-btn active" onclick="lbSetFilter('all',this)">ALL BOSSES</button>
+    <button class="lb-filter-btn" onclick="lbSetFilter('fastest',this)">⚡ FASTEST</button>
+    <button class="lb-filter-btn" onclick="lbSetFilter('souls',this)">💀 MOST SOULS</button>
+    <button class="lb-filter-btn" onclick="lbSetFilter('2p',this)">👬 CO-OP</button>
+    <button class="lb-filter-btn" onclick="lbSetFilter('rush',this)">💀 BOSS RUSH</button>
+  </div>
+  <div id="lb-table-wrap">
+    <table id="lb-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>NAME</th>
+          <th>BOSS</th>
+          <th>TIME</th>
+          <th>SOULS</th>
+          <th>MODE</th>
+          <th>WEAPON</th>
+          <th>REBIRTH</th>
+          <th>DATE</th>
+        </tr>
+      </thead>
+      <tbody id="lb-tbody"></tbody>
+    </table>
+  </div>
+  <div id="lb-actions">
+    <button class="btn" onclick="lbGoBack()">← BACK</button>
+  </div>
+</div>
+
+<!-- DEFEAT -->
+<div id="screen-defeat" class="screen">
+  <div class="big-msg">YOU DIED</div>
+  <div class="sub">DARKNESS CLAIMS THEE</div>
+  <div class="defeat-actions">
+    <button class="btn" onclick="retryBoss()">☠ TRY AGAIN</button>
+    <button class="btn soul" onclick="showScreen('screen-shop')">🛒 SHOP</button>
+    <button class="btn" onclick="showBonfire()">🔥 BONFIRE</button>
+  </div>
+</div>
+
+<!-- VICTORY -->
+<div id="screen-victory" class="screen">
+  <div class="big-msg">VICTORY ACHIEVED</div>
+  <div class="sub" id="victory-reward"></div>
+  <div class="victory-actions">
+    <button class="btn" onclick="afterVictory()">→ CONTINUE</button>
+    <button class="btn magic" id="ngplus-btn" style="display:none;" onclick="activateNGPlus()">🌑 NEW GAME+</button>
+    <button class="btn" id="copy-result-btn" onclick="copyResultToClipboard()" style="border-color:#44ddff;color:#44ddff;display:none;">📋 COPY RESULT</button>
+  </div>
+</div>
+
+<!-- FIRELINK SHRINE -->
+<div id="screen-shop" class="screen">
+  <div id="shrine-header">
+    <div id="shrine-skull">💀</div>
+    <div id="shop-title">FIRELINK  SHRINE</div>
+    <div id="title-souls">☠ <span id="shop-souls-display">0</span> SOULS</div>
+    <div id="shrine-tabs">
+      <button class="shrine-tab active" onclick="switchShrineTab('stats',this)">STATS</button>
+      <button class="shrine-tab" onclick="switchShrineTab('weapons',this)">WEAPONS</button>
+      <button class="shrine-tab" onclick="switchShrineTab('armor',this)">ARMOR</button>
+      <button class="shrine-tab" onclick="switchShrineTab('magic',this)">MAGIC</button>
+      <button class="shrine-tab" onclick="switchShrineTab('techtree',this)">TREE</button>
+    </div>
+  </div>
+  <div id="shrine-stats" class="shrine-panel active"></div>
+  <div id="shrine-weapons" class="shrine-panel"><div class="shrine-grid" id="shrine-weapons-grid"></div></div>
+  <div id="shrine-armor" class="shrine-panel"></div>
+  <div id="shrine-magic" class="shrine-panel"><div class="shrine-grid" id="shrine-magic-grid"></div></div>
+  <div id="shrine-techtree" class="shrine-panel"><div id="tech-tree-wrap"></div></div>
+  <button class="btn" onclick="showScreen('screen-select')" style="margin-top:10px;">← BACK</button>
+</div>
+
+<!-- REBIRTH -->
+<div id="screen-rebirth" class="screen">
+  <div id="rebirth-header">
+    <div id="rebirth-title">✨ REBIRTH ✨</div>
+    <div id="rebirth-count-display">REBIRTH I / IIIII</div>
+    <div id="rebirth-sub">The cycle repeats. Choose your dark gift wisely.</div>
+    <div id="title-souls">☠ <span id="rebirth-souls-display">0</span> SOULS</div>
+  </div>
+  <div id="rebirth-ability-list"></div>
+</div>
+
+<script src="game.js"></script>
+<!-- Boss music — looping MP3 bundled in zip -->
+<audio id="boss-music" src="boss_music.mp3" preload="auto" loop></audio>
+</body>
+</html>
